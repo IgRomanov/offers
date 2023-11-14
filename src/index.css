@@ -1,1 +1,49 @@
-@import url(./components/App/App.css);
+body {
+    min-height: 100vh;
+    background-color: aquamarine;
+}
+
+.App {
+    width: calc(100% - 600px);
+    margin: 0 auto;
+}
+
+.carousel-container {
+    overflow: visible;
+}
+
+.carousel-container>ul {
+    overflow: visible;
+}
+
+.carousel-container>button {
+    border-radius: 6px;
+}
+
+.carousel-container>button::before {
+    color: black;
+}
+
+.carousel-container>button {
+    background-color: white;
+}
+
+.carousel-container>button:disabled:before {
+    color: white;
+}
+
+.carousel-container>button:disabled {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.carousel-container>.react-multiple-carousel__arrow--left {
+    left: 0%;
+}
+
+.carousel-container>.react-multiple-carousel__arrow--right {
+    right: 0%;
+}
+
+.custom-item-style {
+    align-items: center;
+}
