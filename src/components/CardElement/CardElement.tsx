@@ -4,7 +4,7 @@ import IOSSwitch from '../UI/IOSSwitch';
 import { CardElementPropsInterface } from '../../interfaces/cardInterfaces';
 
 const CardElement = (props: CardElementPropsInterface) => {
-    const [isChecked, setIsChecked] = useState(props.card.noAutoPay ? true : false);
+    const [isChecked, setIsChecked] = useState(true);
     const [updatedFields, setUpdatedFields] = useState({
         currentPrice: props.card.monthlyPayment,
         currentAppr: props.card.apr,
@@ -73,13 +73,13 @@ const CardElement = (props: CardElementPropsInterface) => {
                 <Typography variant='subtitle1' color={"grey"}>
                     for
                 </Typography>
-                <Typography variant='caption' color={'#00b006'} fontSize={'25px'} fontWeight={600}>
+                <Typography variant='caption' color="secondary" fontSize={'25px'} fontWeight={600}>
                     {props.card.term} months
                 </Typography>
                 <Typography variant='caption' display={"block"} color={"grey"}>
                     APR
                 </Typography>
-                <Typography variant='caption' color={'#00b006'} fontSize={'25px'} display={'block'} fontWeight={600}>
+                <Typography variant='caption' color="secondary" fontSize={'25px'} display={'block'} fontWeight={600}>
                     {updatedFields.currentAppr}%
                 </Typography>
                 {props.card.note &&

@@ -5,7 +5,11 @@ import App from './components/App/App';
 import { ThemeProvider, createTheme } from '@mui/material';
 
 const theme = createTheme({
-
+  palette: {
+    secondary: {
+      main: '#00b006'
+    }
+  }
 });
 
 const root = ReactDOM.createRoot(
@@ -19,4 +23,3 @@ root.render(
     </ThemeProvider>
   </React.StrictMode>
 );
-
