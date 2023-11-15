@@ -33,7 +33,7 @@ const CardElement = (props: CardElementPropsInterface) => {
             });
         }
     }, [isChecked, props.card]);
-    
+
     return (
         <Card sx={{ display: 'flex', flexDirection: 'column', width: '300px', height: '460px', justifyContent: 'space-between', gap: '10px', borderRadius: '10px', margin: '0 auto' }} >
             <Box sx={{

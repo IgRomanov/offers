@@ -11,5 +11,5 @@ export interface cardInterface {
 export interface CardElementPropsInterface {
     card: cardInterface,
     currentData: cardInterface[],
-    setCurrentData: Dispatch<SetStateAction<cardInterface[]>>
+    setCurrentData: Dispatch<SetStateAction<cardInterface[]>>,
 };

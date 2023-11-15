@@ -37,14 +37,14 @@ const data = [
             "monthlyPayment": 599,
         },
         note: "This is a 24 months APR plan with a 0% APR benefit. If paid in full when 6 months.",
-    }
+    },
 ];
 
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
         items: 3,
-    }
+    },
 };
 
 const Main = () => {
