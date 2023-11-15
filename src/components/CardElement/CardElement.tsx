@@ -39,11 +39,11 @@ const CardElement = (props: CardElementPropsInterface) => {
             <Box sx={{
                 filter: "url('#flt_tag')"
             }}>
-                <Box borderRadius={'10px'} color={'white'} p={'30px 0'} sx={{
+                <Box borderRadius='10px' color='white' p='30px 0' sx={{
                     background: 'linear-gradient(0deg, rgba(2,108,20,1) 0%, rgba(1,255,0,1) 100%)',
                     clipPath: 'polygon(99% 2%, 99% 74%, 99% 75%, 98% 76%, 32% 100%, 1% 74%, 1% 2%)',
                 }}>
-                    <Box p={'0 60px'}>
+                    <Box p='0 60px'>
                         <Typography variant='h4' fontWeight={600}>
                             {Number.isInteger(updatedFields.currentPrice) ? `${updatedFields.currentPrice}.00` : updatedFields.currentPrice}
                         </Typography>
@@ -69,17 +69,17 @@ const CardElement = (props: CardElementPropsInterface) => {
                     </svg>
                 </Box>
             </Box>
-            <Box p={'0 60px'}>
+            <Box p='0 60px'>
                 <Typography variant='subtitle1' color={"grey"}>
                     for
                 </Typography>
-                <Typography variant='caption' color="secondary" fontSize={'25px'} fontWeight={600}>
+                <Typography variant='caption' color="secondary" fontSize='25px' fontWeight={600}>
                     {props.card.term} months
                 </Typography>
                 <Typography variant='caption' display={"block"} color={"grey"}>
                     APR
                 </Typography>
-                <Typography variant='caption' color="secondary" fontSize={'25px'} display={'block'} fontWeight={600}>
+                <Typography variant='caption' color="secondary" fontSize='25px' display='block' fontWeight={600}>
                     {updatedFields.currentAppr}%
                 </Typography>
                 {props.card.note &&
@@ -88,7 +88,7 @@ const CardElement = (props: CardElementPropsInterface) => {
                     </Typography>
                 }
             </Box>
-            <Box p={'20px'} display={'flex'} flexDirection={'column'}>
+            <Box p='20px' display='flex' flexDirection='column'>
                 {props.card.noAutoPay &&
                     <FormControlLabel
                         control={<IOSSwitch checked={isChecked} />}
